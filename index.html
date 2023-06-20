@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Video Project</title>
+</head>
+<body>
+
+    <div>
+        <img class="preload" src="./1amw.gif" alt="loading">
+    </div>
+    <header class='h-screen w-screen hidden header'>
+        <video class="h-screen w-screen absolute z-10 video-container" loop autoplay>
+            <source src="/pexels-taryn-elliott-5442785-1920x1080-25fps.mp4">
+        </video>
+        <h1 class="z-30 relative text-[4rem] font-mono h-screen w-screen flex items-center justify-center before:content-[''] before:absolute   before:bg-[#d7a66760] before:w-screen before:h-screen ">Video Project</h1>
+
+        <button class="absolute left-4 bottom-4 z-40 bg-blue-600 p-4 w-[180px] rounded-xl flex justify-between cursor-pointer button">
+            <span class="text-white cursor-pointer">Play</span>
+            <span class="text-white cursor-pointer">Pause</span>
+            <span class="bg-gray-600 h-full w-[90px] top-0 left-0 rounded-xl absolute cursor-pointer translate-x-[0%] transition-all btnOverlay"></span>
+        </button>
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>
